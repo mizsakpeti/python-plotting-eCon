@@ -8,6 +8,39 @@ A legnagyobb előnye, hogy így ha pl később frissíteni akarunk egy csomagot,
 
 Ezeknek a kezelése Anacondából is lehetséges, de röviden megmutatom a parancssoros verziót a Python beépített venv moduljával.
 
+### 1.1 Virtuális környezet létrehozása
+
+A következő kódsorokat parancssorbón kell kiadni. A Python **venv modulja** az alapcsomag része, így nem szükséges külön telepíteni.
+
+Először nézzük meg, hogy milyen csomagok vannak telepítve a "fő" Python könyvtárba:
+
+    pip list
+
+Ezt követően hozzunk létre egy virtuális környezetet az aktuális projekthez. Először navigáljunk a projekt mappájába (cd paranccsal), majd futtassuk a következő kódsort a "plotting_venv' nevű virtuális környezet létrehozásához.
+
+    python -m venv plotting_venv
+
+Most létrejött egy "plotting_venv" nevű mappa ott, ahol kiadtuk a parancsot, és ezzel **alapvetően készen is van a virtuális környezet.**
+
+*(Ha több Python verzió is telepítve van a gépünkre, akkor azzal a python verzióval adjuk ki a fenti parancsot, amit a virtuális környezetbe bele szeretnénk építeni)* 
+
+    py -3.7 -m venv  plotting_venv
+
+### 1.2 Virtuális környezet aktiválása
+A korábban létrehozott **virtuális környezet aktiválásához** a benne található *avtivate.bat* file-t kell futtatnunk a parancssorból. (Linuxon *activate.csh*)
+
+    plotting_venv\Scripts\activate.bat
+
+Ha ezt sikeresen lefuttattuk, akkor megfigyelhető, hogy a terminál kiírja a sorok elején, hogy éppen ebben a virtuális környezetben vagyunk. Ezt ellenőrizhetjük úgy is, hogy megnézzük, hogy melyik Python verzió aktív:
+
+    where python (Windows)
+
+    which python (Linux)
+
+Ha minden jó sikerült, akkor a virtuális környezetünk Python verziója látszik legfelül a listában. A környezet **deaktiválása** szintén nem túl bonyolult, az alábbi parancsot kell egyszerűen kiadni:
+
+    deactivate
+
 ## 2. Csomagok telepítése - pip
 
 Elkészült a virtuális környeztünk, így következhet a projekthez szükséges csomagok telepítése. Először a már korábban látott *"pip list"* paranccsal ellenőrizhetjük az újonnan létrehozott környezetünk tartalmát. Láthatjuk, **hogy nem teljesen üres, hiszen a `pip` például már telepítve van,** de erre szükségünk is lesz a további csomagok telepítéséhez.
@@ -44,7 +77,6 @@ pip freeze > requirement.txt
 ```
 
 Ebben listázásra kerül környezet összes telepített könyvtára verziószámmal együtt.
-
 
 Note: venv in Jupiter:
 

@@ -17,8 +17,6 @@ app.layout = html.Div([
     html.Button('Submit', id='submit-val', n_clicks=0),
     html.Br(),
     html.Div('Output on click:', id='my-state-output'),
-
-
 ])
 
 
