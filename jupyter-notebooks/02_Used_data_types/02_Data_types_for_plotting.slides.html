@@ -14598,14 +14598,17 @@ div.jp-OutputPrompt {
 
 /* Scrollbars */
 
-::-webkit-scrollbar {
+::-webkit-scrollbar
+{
   width: 6px;
   height: 6px;
 }
-::-webkit-scrollbar * {
-  background: transparent;
+::-webkit-scrollbar *
+{
+  background:transparent;
 }
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb
+{
   background: #727272 !important;
 }
 </style>
@@ -14632,12 +14635,12 @@ div.jp-OutputPrompt {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: {
-                    automatic: true
+                    linebreaks: { 
+                    automatic: true 
                     }
                 }
             });
-
+        
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14864,8 +14867,8 @@ Egy egyszerű példa a definiálására:</p>
 <pre>
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
 <span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp\ipykernel_5788\3287939529.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>myNestedTuple<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-cyan-intense-fg ansi-bold">33</span>
+Input <span class="ansi-green-intense-fg ansi-bold">In [6]</span>, in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> myNestedTuple[<span style="color: rgb(98,98,98)">1</span>][<span style="color: rgb(98,98,98)">1</span>] <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(98,98,98)">33</span>
 
 <span class="ansi-red-intense-fg ansi-bold">TypeError</span>: &#39;tuple&#39; object does not support item assignment</pre>
 </div>
@@ -14882,9 +14885,9 @@ Egy egyszerű példa a definiálására:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.-Numpy-array">2. Numpy array<a class="anchor-link" href="#2.-Numpy-array">&#182;</a></h2><p>A Numpy egy nagyon elterjedt lineáris-algebra Python csomag, aminek az objektumaira sok egyéb csomag is épít. Mi főleg a saját, listához hasonló <code>Array</code> adattípusát fogjuk használni, ami gyorsabb futást és műveleteket tesz lehetővé a sima Python listáknál, mivel jelentős része C-ben van megírva.
+<h2 id="2.-Numpy-array">2. Numpy array<a class="anchor-link" href="#2.-Numpy-array">&#182;</a></h2><p>A Numpy egy nagyon elterjedt lineáris-algebra Python csomag, aminek az objektumaira sok egyéb csomag is épít. Mi főleg a listához hasonló <code>Array</code> adattípusát fogjuk használni, ami gyorsabb műveleteket tesz lehetővé az egyszerű Python listáknál, mivel jelentős része C-ben van megírva.
 <a href="https://github.com/numpy/numpy">https://github.com/numpy/numpy</a></p>
-<p>Amennyiben még nem tettük meg, telepítsük a virtuális környezettünkben a korábban mutatott módon:</p>
+<p>Amennyiben még nem tettük meg, telepítsük a virtuális környezettünkbe a következő sort futtatva parancssorban:</p>
 
 <pre><code>pip install numpy
 
@@ -15077,51 +15080,6 @@ Egy egyszerű példa a definiálására:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>  <span class="c1"># Return a new array of given shape and type, filled with zeros.</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.]])</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
@@ -15203,9 +15161,9 @@ Egy egyszerű példa a definiálására:</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[-0.02025287, -0.79169857,  1.70317683],
-       [-0.40228006,  0.58191241, -0.55449557],
-       [-0.10032516, -1.34170386, -0.28657899]])</pre>
+<pre>array([[ 0.11617559,  1.6620293 , -0.54749053],
+       [ 1.09279224,  1.22061577, -1.18698997],
+       [-0.21559176,  1.08039116,  0.64861233]])</pre>
 </div>
 
 </div>
@@ -15246,7 +15204,7 @@ Egy egyszerű példa a definiálására:</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([46, 58, 31, 20, 85, 58, 35, 50, 30, 17])</pre>
+<pre>array([67, 45, 90, 17, 52, 15, 55, 34, 86,  9])</pre>
 </div>
 
 </div>
@@ -15383,220 +15341,6 @@ randint(...) method of numpy.random.mtrand.RandomState instance
 
 </div>
 
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>A Numpy Array-nek rengeteg hasznos függvénye van, de ebbe most nem megyünk bele, viszont a <code>dir</code> függvényel kilistázható egy objektum összes elérhető attribútuma.</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">dir</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">]))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&#39;T&#39;,
- &#39;__abs__&#39;,
- &#39;__add__&#39;,
- &#39;__and__&#39;,
- &#39;__array__&#39;,
- &#39;__array_finalize__&#39;,
- &#39;__array_function__&#39;,
- &#39;__array_interface__&#39;,
- &#39;__array_prepare__&#39;,
- &#39;__array_priority__&#39;,
- &#39;__array_struct__&#39;,
- &#39;__array_ufunc__&#39;,
- &#39;__array_wrap__&#39;,
- &#39;__bool__&#39;,
- &#39;__class__&#39;,
- &#39;__complex__&#39;,
- &#39;__contains__&#39;,
- &#39;__copy__&#39;,
- &#39;__deepcopy__&#39;,
- &#39;__delattr__&#39;,
- &#39;__delitem__&#39;,
- &#39;__dir__&#39;,
- &#39;__divmod__&#39;,
- &#39;__doc__&#39;,
- &#39;__eq__&#39;,
- &#39;__float__&#39;,
- &#39;__floordiv__&#39;,
- &#39;__format__&#39;,
- &#39;__ge__&#39;,
- &#39;__getattribute__&#39;,
- &#39;__getitem__&#39;,
- &#39;__gt__&#39;,
- &#39;__hash__&#39;,
- &#39;__iadd__&#39;,
- &#39;__iand__&#39;,
- &#39;__ifloordiv__&#39;,
- &#39;__ilshift__&#39;,
- &#39;__imatmul__&#39;,
- &#39;__imod__&#39;,
- &#39;__imul__&#39;,
- &#39;__index__&#39;,
- &#39;__init__&#39;,
- &#39;__init_subclass__&#39;,
- &#39;__int__&#39;,
- &#39;__invert__&#39;,
- &#39;__ior__&#39;,
- &#39;__ipow__&#39;,
- &#39;__irshift__&#39;,
- &#39;__isub__&#39;,
- &#39;__iter__&#39;,
- &#39;__itruediv__&#39;,
- &#39;__ixor__&#39;,
- &#39;__le__&#39;,
- &#39;__len__&#39;,
- &#39;__lshift__&#39;,
- &#39;__lt__&#39;,
- &#39;__matmul__&#39;,
- &#39;__mod__&#39;,
- &#39;__mul__&#39;,
- &#39;__ne__&#39;,
- &#39;__neg__&#39;,
- &#39;__new__&#39;,
- &#39;__or__&#39;,
- &#39;__pos__&#39;,
- &#39;__pow__&#39;,
- &#39;__radd__&#39;,
- &#39;__rand__&#39;,
- &#39;__rdivmod__&#39;,
- &#39;__reduce__&#39;,
- &#39;__reduce_ex__&#39;,
- &#39;__repr__&#39;,
- &#39;__rfloordiv__&#39;,
- &#39;__rlshift__&#39;,
- &#39;__rmatmul__&#39;,
- &#39;__rmod__&#39;,
- &#39;__rmul__&#39;,
- &#39;__ror__&#39;,
- &#39;__rpow__&#39;,
- &#39;__rrshift__&#39;,
- &#39;__rshift__&#39;,
- &#39;__rsub__&#39;,
- &#39;__rtruediv__&#39;,
- &#39;__rxor__&#39;,
- &#39;__setattr__&#39;,
- &#39;__setitem__&#39;,
- &#39;__setstate__&#39;,
- &#39;__sizeof__&#39;,
- &#39;__str__&#39;,
- &#39;__sub__&#39;,
- &#39;__subclasshook__&#39;,
- &#39;__truediv__&#39;,
- &#39;__xor__&#39;,
- &#39;all&#39;,
- &#39;any&#39;,
- &#39;argmax&#39;,
- &#39;argmin&#39;,
- &#39;argpartition&#39;,
- &#39;argsort&#39;,
- &#39;astype&#39;,
- &#39;base&#39;,
- &#39;byteswap&#39;,
- &#39;choose&#39;,
- &#39;clip&#39;,
- &#39;compress&#39;,
- &#39;conj&#39;,
- &#39;conjugate&#39;,
- &#39;copy&#39;,
- &#39;ctypes&#39;,
- &#39;cumprod&#39;,
- &#39;cumsum&#39;,
- &#39;data&#39;,
- &#39;diagonal&#39;,
- &#39;dot&#39;,
- &#39;dtype&#39;,
- &#39;dump&#39;,
- &#39;dumps&#39;,
- &#39;fill&#39;,
- &#39;flags&#39;,
- &#39;flat&#39;,
- &#39;flatten&#39;,
- &#39;getfield&#39;,
- &#39;imag&#39;,
- &#39;item&#39;,
- &#39;itemset&#39;,
- &#39;itemsize&#39;,
- &#39;max&#39;,
- &#39;mean&#39;,
- &#39;min&#39;,
- &#39;nbytes&#39;,
- &#39;ndim&#39;,
- &#39;newbyteorder&#39;,
- &#39;nonzero&#39;,
- &#39;partition&#39;,
- &#39;prod&#39;,
- &#39;ptp&#39;,
- &#39;put&#39;,
- &#39;ravel&#39;,
- &#39;real&#39;,
- &#39;repeat&#39;,
- &#39;reshape&#39;,
- &#39;resize&#39;,
- &#39;round&#39;,
- &#39;searchsorted&#39;,
- &#39;setfield&#39;,
- &#39;setflags&#39;,
- &#39;shape&#39;,
- &#39;size&#39;,
- &#39;sort&#39;,
- &#39;squeeze&#39;,
- &#39;std&#39;,
- &#39;strides&#39;,
- &#39;sum&#39;,
- &#39;swapaxes&#39;,
- &#39;take&#39;,
- &#39;tobytes&#39;,
- &#39;tofile&#39;,
- &#39;tolist&#39;,
- &#39;tostring&#39;,
- &#39;trace&#39;,
- &#39;transpose&#39;,
- &#39;var&#39;,
- &#39;view&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15615,7 +15359,7 @@ randint(...) method of numpy.random.mtrand.RandomState instance
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Amire nekünk a plotok elkészítéséhez gyakran szükségünk van az az indexelés, ami eltréhet különbözik a sima listák indexelésétől (több dimenzió esetén).</p>
+<p>Amire nekünk a plotok elkészítéséhez gyakran szükségünk van az az indexelés, ami eltréhet a sima listák indexelésétől (több dimenzió esetén).</p>
 
 <pre><code>arr_2d[row][col]
 arr_2d[row,col]
@@ -15894,47 +15638,6 @@ arr_2d[row,col]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">array_2D</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># Alsó sor</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([35, 40, 45])</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
@@ -15972,15 +15675,51 @@ arr_2d[row,col]
 
 </div>
 
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>A <code>numpy</code> egyik fő előnye, a sebesség:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">timeit</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">array_2D</span><span class="o">.</span><span class="n">shape</span>  <span class="c1"># Return the shape of an array.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Add scalar</span>
+<span class="n">py_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">)]</span>
+<span class="n">np_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">100000</span><span class="p">)</span>
+
+<span class="n">list_time</span> <span class="o">=</span> <span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">py_list</span><span class="p">],</span> <span class="n">number</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">arr_time</span> <span class="o">=</span> <span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">np_arr</span> <span class="o">+</span> <span class="n">np_arr</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Python list finished in </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">list_time</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span><span class="si">}</span><span class="s2">s.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Numpy array finished in </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">arr_time</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span><span class="si">}</span><span class="s2">s.&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15998,22 +15737,69 @@ arr_2d[row,col]
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>(3, 3)</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Python list finished in 0.03284s.
+Numpy array finished in 0.00059s.
+</pre>
+</div>
 </div>
 
 </div>
 
 </div>
 
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Dot product</span>
+<span class="n">py_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">)]</span>
+<span class="n">np_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">100000</span><span class="p">)</span>
+
+<span class="n">list_time</span> <span class="o">=</span> <span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">dot</span><span class="p">(</span><span class="n">py_list</span><span class="p">,</span> <span class="n">py_list</span><span class="p">),</span> <span class="n">number</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">arr_time</span> <span class="o">=</span> <span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np_arr</span><span class="p">,</span> <span class="n">np_arr</span><span class="p">),</span> <span class="n">number</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Python list finished in </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">list_time</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span><span class="si">}</span><span class="s2">s.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Numpy array finished in </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">arr_time</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span><span class="si">}</span><span class="s2">s.&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
-</div></section></section><section><section>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Python list finished in 0.04709s.
+Numpy array finished in 0.00043s.
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16036,7 +15822,7 @@ arr_2d[row,col]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -16067,7 +15853,7 @@ arr_2d[row,col]
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Mielőtt rátérnénk a legelterjedtebb Pandas objektumra, a <code>DataFrame</code>-re, előbb nézzük meg ennek az építőelemét, a <code>Series</code>-t.</p>
 <p>A Pandas <code>Series</code> a sima listához és a numpy array-hez hasonlóan <strong>alapvetően egy indexelt sorozat, viszont itt az indexek nem csak számok lehetnek.</strong> 1D-s adattípus.</p>
-<p>Létrehzása törénhet lista, numpy array és dictionary alapján is:</p>
+<p>Létrehozása törénhet <code>list</code>, <code>numpy array</code> és <code>dictionary</code> alapján is:</p>
 
 </div>
 </div>
@@ -16077,7 +15863,7 @@ arr_2d[row,col]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
@@ -16094,7 +15880,7 @@ arr_2d[row,col]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">myList</span><span class="p">)</span>
@@ -16115,7 +15901,7 @@ arr_2d[row,col]
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
 
 
 
@@ -16138,7 +15924,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">myList</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">labels</span><span class="p">)</span>  <span class="c1"># Indexelés &quot;labels&quot; alapján</span>
@@ -16159,97 +15945,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>a    10
-b    20
-c    30
-dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">])</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="c1"># Numpy array alapján</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>0    10
-1    20
-2    30
-dtype: int32</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">30</span><span class="p">}</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>   <span class="c1"># dictionary alapján: az indexelés autómatikusan a key-k alapján</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
 
 
 
@@ -16284,7 +15980,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">]</span>
@@ -16307,7 +16003,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
 
 
 
@@ -16327,50 +16023,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numberIndexedSeries</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># Itt is lehet range-t definiálni </span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>0    10
-1    20
-dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">30</span><span class="p">}</span>
@@ -16437,277 +16090,12 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">101</span><span class="p">)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span>
-                  <span class="n">index</span><span class="o">=</span><span class="s1">&#39;A B C D E&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;W X Y Z&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
-<span class="n">df</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>W</th>
-      <th>X</th>
-      <th>Y</th>
-      <th>Z</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>A</th>
-      <td>2.706850</td>
-      <td>0.628133</td>
-      <td>0.907969</td>
-      <td>0.503826</td>
-    </tr>
-    <tr>
-      <th>B</th>
-      <td>0.651118</td>
-      <td>-0.319318</td>
-      <td>-0.848077</td>
-      <td>0.605965</td>
-    </tr>
-    <tr>
-      <th>C</th>
-      <td>-2.018168</td>
-      <td>0.740122</td>
-      <td>0.528813</td>
-      <td>-0.589001</td>
-    </tr>
-    <tr>
-      <th>D</th>
-      <td>0.188695</td>
-      <td>-0.758872</td>
-      <td>-0.933237</td>
-      <td>0.955057</td>
-    </tr>
-    <tr>
-      <th>E</th>
-      <td>0.190794</td>
-      <td>1.978757</td>
-      <td>2.605967</td>
-      <td>0.683509</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Beolvasás File-ból</span>
-<span class="n">df_file</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;excelData.xlsx&#39;</span><span class="p">,</span><span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;IndexCol&#39;</span><span class="p">)</span>
-<span class="n">df_file</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Col1</th>
-      <th>Col2</th>
-      <th>Col3</th>
-    </tr>
-    <tr>
-      <th>IndexCol</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>12</td>
-      <td>1</td>
-      <td>0.5</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>24</td>
-      <td>4</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>36</td>
-      <td>9</td>
-      <td>1.5</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>48</td>
-      <td>16</td>
-      <td>2.0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>60</td>
-      <td>25</td>
-      <td>2.5</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Indexelési lehetőségek</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">]</span>  <span class="c1"># 1 oszlop indexelése: A kimenet egy Series!</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>A    0.628133
-B   -0.319318
-C    0.740122
-D   -0.758872
-E    1.978757
-Name: X, dtype: float64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Z&#39;</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">]]</span>   <span class="c1"># Több osszlop indexelése: Kimenet is DataFrame</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">101</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="s1">&#39;A B C D&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;X Y Z&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<span class="n">df</span>
 </pre></div>
 
      </div>
@@ -16748,35 +16136,35 @@ Name: X, dtype: float64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Z</th>
       <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>A</th>
-      <td>0.503826</td>
+      <td>2.706850</td>
       <td>0.628133</td>
+      <td>0.907969</td>
     </tr>
     <tr>
       <th>B</th>
-      <td>0.605965</td>
+      <td>0.503826</td>
+      <td>0.651118</td>
       <td>-0.319318</td>
     </tr>
     <tr>
       <th>C</th>
-      <td>-0.589001</td>
-      <td>0.740122</td>
+      <td>-0.848077</td>
+      <td>0.605965</td>
+      <td>-2.018168</td>
     </tr>
     <tr>
       <th>D</th>
-      <td>0.955057</td>
-      <td>-0.758872</td>
-    </tr>
-    <tr>
-      <th>E</th>
-      <td>0.683509</td>
-      <td>1.978757</td>
+      <td>0.740122</td>
+      <td>0.528813</td>
+      <td>-0.589001</td>
     </tr>
   </tbody>
 </table>
@@ -16797,7 +16185,11 @@ Name: X, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;B&#39;</span><span class="p">]</span>  <span class="c1"># Sor index név alapján: A kimenet itt is egy Series</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Beolvasás File-ból (https://www.kaggle.com/datasets/rounakbanik/pokemon)</span>
+<span class="n">df_poke</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;pokemon.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;pokedex_number&#39;</span><span class="p">)</span>
+<span class="n">df_poke</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;abilities&#39;</span><span class="p">,</span><span class="s1">&#39;against_bug&#39;</span><span class="p">,</span><span class="s1">&#39;against_dark&#39;</span><span class="p">,</span><span class="s1">&#39;against_dragon&#39;</span><span class="p">,</span><span class="s1">&#39;against_electric&#39;</span><span class="p">,</span><span class="s1">&#39;against_fairy&#39;</span><span class="p">,</span><span class="s1">&#39;against_fight&#39;</span><span class="p">,</span><span class="s1">&#39;against_fire&#39;</span><span class="p">,</span><span class="s1">&#39;against_flying&#39;</span><span class="p">,</span><span class="s1">&#39;against_ghost&#39;</span><span class="p">,</span><span class="s1">&#39;against_grass&#39;</span><span class="p">,</span><span class="s1">&#39;against_ground&#39;</span><span class="p">,</span><span class="s1">&#39;against_ice&#39;</span><span class="p">,</span><span class="s1">&#39;against_normal&#39;</span><span class="p">,</span><span class="s1">&#39;against_poison&#39;</span><span class="p">,</span><span class="s1">&#39;against_psychic&#39;</span><span class="p">,</span><span class="s1">&#39;against_rock&#39;</span><span class="p">,</span><span class="s1">&#39;against_steel&#39;</span><span class="p">,</span><span class="s1">&#39;against_water&#39;</span><span class="p">,</span><span class="s1">&#39;base_egg_steps&#39;</span><span class="p">,</span><span class="s1">&#39;base_happiness&#39;</span><span class="p">,</span><span class="s1">&#39;base_total&#39;</span><span class="p">,</span><span class="s1">&#39;japanese_name&#39;</span><span class="p">,</span><span class="s1">&#39;percentage_male&#39;</span><span class="p">,</span><span class="s1">&#39;type2&#39;</span><span class="p">,</span><span class="s1">&#39;experience_growth&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;height_m&#39;</span><span class="p">,</span><span class="s1">&#39;weight_kg&#39;</span><span class="p">,</span> <span class="s1">&#39;sp_attack&#39;</span><span class="p">,</span><span class="s1">&#39;sp_defense&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_poke</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16819,13 +16211,119 @@ Name: X, dtype: float64</pre>
 
 
 
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>W    0.651118
-X   -0.319318
-Y   -0.848077
-Z    0.605965
-Name: B, dtype: float64</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>attack</th>
+      <th>capture_rate</th>
+      <th>classfication</th>
+      <th>defense</th>
+      <th>hp</th>
+      <th>name</th>
+      <th>speed</th>
+      <th>type1</th>
+      <th>generation</th>
+      <th>is_legendary</th>
+    </tr>
+    <tr>
+      <th>pokedex_number</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>49</td>
+      <td>45</td>
+      <td>Seed Pokémon</td>
+      <td>49</td>
+      <td>45</td>
+      <td>Bulbasaur</td>
+      <td>45</td>
+      <td>grass</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>62</td>
+      <td>45</td>
+      <td>Seed Pokémon</td>
+      <td>63</td>
+      <td>60</td>
+      <td>Ivysaur</td>
+      <td>60</td>
+      <td>grass</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>100</td>
+      <td>45</td>
+      <td>Seed Pokémon</td>
+      <td>123</td>
+      <td>80</td>
+      <td>Venusaur</td>
+      <td>80</td>
+      <td>grass</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>52</td>
+      <td>45</td>
+      <td>Lizard Pokémon</td>
+      <td>43</td>
+      <td>39</td>
+      <td>Charmander</td>
+      <td>65</td>
+      <td>fire</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>64</td>
+      <td>45</td>
+      <td>Flame Pokémon</td>
+      <td>58</td>
+      <td>58</td>
+      <td>Charmeleon</td>
+      <td>80</td>
+      <td>fire</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -16834,6 +16332,18 @@ Name: B, dtype: float64</pre>
 
 </div>
 
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Indexelési lehetőségek</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16842,7 +16352,7 @@ Name: B, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Sor index pozíció alapján: A kimenet itt is egy Series</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_poke</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>  <span class="c1"># 1 oszlop indexelése: A kimenet egy Series!</span>
 </pre></div>
 
      </div>
@@ -16866,11 +16376,19 @@ Name: B, dtype: float64</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>W    0.651118
-X   -0.319318
-Y   -0.848077
-Z    0.605965
-Name: B, dtype: float64</pre>
+<pre>pokedex_number
+1       Bulbasaur
+2         Ivysaur
+3        Venusaur
+4      Charmander
+5      Charmeleon
+          ...    
+797    Celesteela
+798       Kartana
+799      Guzzlord
+800      Necrozma
+801      Magearna
+Name: name, Length: 801, dtype: object</pre>
 </div>
 
 </div>
@@ -16879,7 +16397,7 @@ Name: B, dtype: float64</pre>
 
 </div>
 
-</div></div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16887,7 +16405,7 @@ Name: B, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;Y&#39;</span><span class="p">]</span>   <span class="c1"># Sor és oszlop egyszerre: Megkapjuk az értéket</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_poke</span><span class="p">[[</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;attack&#39;</span><span class="p">]]</span>   <span class="c1"># Több osszlop indexelése: Kimenet is DataFrame</span>
 </pre></div>
 
      </div>
@@ -16906,47 +16424,6 @@ Name: B, dtype: float64</pre>
 
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>-0.8480769834036315</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">],[</span><span class="s1">&#39;W&#39;</span><span class="p">,</span><span class="s1">&#39;Y&#39;</span><span class="p">]]</span>    <span class="c1"># Több sor, több oszlop</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
 
 
 
@@ -16969,23 +16446,74 @@ Name: B, dtype: float64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>W</th>
-      <th>Y</th>
+      <th>name</th>
+      <th>attack</th>
+    </tr>
+    <tr>
+      <th>pokedex_number</th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>A</th>
-      <td>2.706850</td>
-      <td>0.907969</td>
+      <th>1</th>
+      <td>Bulbasaur</td>
+      <td>49</td>
     </tr>
     <tr>
-      <th>B</th>
-      <td>0.651118</td>
-      <td>-0.848077</td>
+      <th>2</th>
+      <td>Ivysaur</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Venusaur</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Charmander</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Charmeleon</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>797</th>
+      <td>Celesteela</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <th>798</th>
+      <td>Kartana</td>
+      <td>181</td>
+    </tr>
+    <tr>
+      <th>799</th>
+      <td>Guzzlord</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <th>800</th>
+      <td>Necrozma</td>
+      <td>107</td>
+    </tr>
+    <tr>
+      <th>801</th>
+      <td>Magearna</td>
+      <td>95</td>
     </tr>
   </tbody>
 </table>
+<p>801 rows × 2 columns</p>
 </div>
 </div>
 
@@ -16995,19 +16523,58 @@ Name: B, dtype: float64</pre>
 
 </div>
 
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Egyszer%C5%B1-sz%C5%B1r%C3%A9sek">Egyszer&#369; sz&#369;r&#233;sek<a class="anchor-link" href="#Egyszer%C5%B1-sz%C5%B1r%C3%A9sek">&#182;</a></h3><p>Csak említés szinten, de mindenképpen szeretném megmutatni, hogy hogyan törénnek a szűrések a Pandas dataframe-ekben, hiszen ez gyakorlatban egy nagyon sokszor használt funkció.</p>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_poke</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># Sor index pozíció alapján: A kimenet itt is egy Series</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>attack                     49
+capture_rate               45
+classfication    Seed Pokémon
+defense                    49
+hp                         45
+name                Bulbasaur
+speed                      45
+type1                   grass
+generation                  1
+is_legendary                0
+Name: 1, dtype: object</pre>
+</div>
 
 </div>
+
 </div>
+
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17015,7 +16582,7 @@ Name: B, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_poke</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_poke</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Pikachu&quot;</span><span class="p">]</span>  <span class="c1"># Sor egy oszlop értéke alapján</span>
 </pre></div>
 
      </div>
@@ -17056,47 +16623,44 @@ Name: B, dtype: float64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>W</th>
-      <th>X</th>
-      <th>Y</th>
-      <th>Z</th>
+      <th>attack</th>
+      <th>capture_rate</th>
+      <th>classfication</th>
+      <th>defense</th>
+      <th>hp</th>
+      <th>name</th>
+      <th>speed</th>
+      <th>type1</th>
+      <th>generation</th>
+      <th>is_legendary</th>
+    </tr>
+    <tr>
+      <th>pokedex_number</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>A</th>
-      <td>2.706850</td>
-      <td>0.628133</td>
-      <td>0.907969</td>
-      <td>0.503826</td>
-    </tr>
-    <tr>
-      <th>B</th>
-      <td>0.651118</td>
-      <td>-0.319318</td>
-      <td>-0.848077</td>
-      <td>0.605965</td>
-    </tr>
-    <tr>
-      <th>C</th>
-      <td>-2.018168</td>
-      <td>0.740122</td>
-      <td>0.528813</td>
-      <td>-0.589001</td>
-    </tr>
-    <tr>
-      <th>D</th>
-      <td>0.188695</td>
-      <td>-0.758872</td>
-      <td>-0.933237</td>
-      <td>0.955057</td>
-    </tr>
-    <tr>
-      <th>E</th>
-      <td>0.190794</td>
-      <td>1.978757</td>
-      <td>2.605967</td>
-      <td>0.683509</td>
+      <th>25</th>
+      <td>55</td>
+      <td>190</td>
+      <td>Mouse Pokémon</td>
+      <td>40</td>
+      <td>35</td>
+      <td>Pikachu</td>
+      <td>90</td>
+      <td>electric</td>
+      <td>1</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
@@ -17109,7 +16673,7 @@ Name: B, dtype: float64</pre>
 
 </div>
 
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17117,7 +16681,7 @@ Name: B, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_poke</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="s1">&#39;capture_rate&#39;</span><span class="p">]</span>   <span class="c1"># Sor és oszlop egyszerre: Megkapjuk az értéket</span>
 </pre></div>
 
      </div>
@@ -17139,70 +16703,9 @@ Name: B, dtype: float64</pre>
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>W</th>
-      <th>X</th>
-      <th>Y</th>
-      <th>Z</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>A</th>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>B</th>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>C</th>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>D</th>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>E</th>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>190</pre>
 </div>
 
 </div>
@@ -17211,53 +16714,18 @@ Name: B, dtype: float64</pre>
 
 </div>
 
-</div></div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">filt</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;W&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span>
-<span class="n">filt</span>
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Egyszer%C5%B1-sz%C5%B1r%C3%A9sek">Egyszer&#369; sz&#369;r&#233;sek<a class="anchor-link" href="#Egyszer%C5%B1-sz%C5%B1r%C3%A9sek">&#182;</a></h3><p>Csak említés szinten, de mindenképpen szeretném megmutatni, hogy hogyan törénnek a szűrések a Pandas dataframe-ekben, hiszen ez gyakorlatban egy nagyon sokszor használt funkció.</p>
 
-     </div>
 </div>
 </div>
 </div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>A     True
-B     True
-C    False
-D     True
-E     True
-Name: W, dtype: bool</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -17266,7 +16734,7 @@ Name: W, dtype: bool</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">filt</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_poke</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -17307,135 +16775,96 @@ Name: W, dtype: bool</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>W</th>
-      <th>X</th>
-      <th>Y</th>
-      <th>Z</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>A</th>
-      <td>2.706850</td>
-      <td>0.628133</td>
-      <td>0.907969</td>
-      <td>0.503826</td>
+      <th>attack</th>
+      <th>capture_rate</th>
+      <th>classfication</th>
+      <th>defense</th>
+      <th>hp</th>
+      <th>name</th>
+      <th>speed</th>
+      <th>type1</th>
+      <th>generation</th>
+      <th>is_legendary</th>
     </tr>
     <tr>
-      <th>B</th>
-      <td>0.651118</td>
-      <td>-0.319318</td>
-      <td>-0.848077</td>
-      <td>0.605965</td>
-    </tr>
-    <tr>
-      <th>D</th>
-      <td>0.188695</td>
-      <td>-0.758872</td>
-      <td>-0.933237</td>
-      <td>0.955057</td>
-    </tr>
-    <tr>
-      <th>E</th>
-      <td>0.190794</td>
-      <td>1.978757</td>
-      <td>2.605967</td>
-      <td>0.683509</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">filt</span><span class="p">]</span>  <span class="c1"># A `loc` nem csak indexet kaphat, de boolian array-t is</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
+      <th>pokedex_number</th>
       <th></th>
-      <th>W</th>
-      <th>X</th>
-      <th>Y</th>
-      <th>Z</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>A</th>
-      <td>2.706850</td>
-      <td>0.628133</td>
-      <td>0.907969</td>
-      <td>0.503826</td>
+      <th>1</th>
+      <td>49</td>
+      <td>45</td>
+      <td>Seed Pokémon</td>
+      <td>49</td>
+      <td>45</td>
+      <td>Bulbasaur</td>
+      <td>45</td>
+      <td>grass</td>
+      <td>1</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>B</th>
-      <td>0.651118</td>
-      <td>-0.319318</td>
-      <td>-0.848077</td>
-      <td>0.605965</td>
+      <th>2</th>
+      <td>62</td>
+      <td>45</td>
+      <td>Seed Pokémon</td>
+      <td>63</td>
+      <td>60</td>
+      <td>Ivysaur</td>
+      <td>60</td>
+      <td>grass</td>
+      <td>1</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>D</th>
-      <td>0.188695</td>
-      <td>-0.758872</td>
-      <td>-0.933237</td>
-      <td>0.955057</td>
+      <th>3</th>
+      <td>100</td>
+      <td>45</td>
+      <td>Seed Pokémon</td>
+      <td>123</td>
+      <td>80</td>
+      <td>Venusaur</td>
+      <td>80</td>
+      <td>grass</td>
+      <td>1</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>E</th>
-      <td>0.190794</td>
-      <td>1.978757</td>
-      <td>2.605967</td>
-      <td>0.683509</td>
+      <th>4</th>
+      <td>52</td>
+      <td>45</td>
+      <td>Lizard Pokémon</td>
+      <td>43</td>
+      <td>39</td>
+      <td>Charmander</td>
+      <td>65</td>
+      <td>fire</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>64</td>
+      <td>45</td>
+      <td>Flame Pokémon</td>
+      <td>58</td>
+      <td>58</td>
+      <td>Charmeleon</td>
+      <td>80</td>
+      <td>fire</td>
+      <td>1</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
@@ -17448,7 +16877,7 @@ Name: W, dtype: bool</pre>
 
 </div>
 
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17456,7 +16885,7 @@ Name: W, dtype: bool</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_poke</span><span class="p">[</span><span class="s1">&#39;attack&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">80</span>
 </pre></div>
 
      </div>
@@ -17478,70 +16907,21 @@ Name: W, dtype: bool</pre>
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>W</th>
-      <th>X</th>
-      <th>Y</th>
-      <th>Z</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>A</th>
-      <td>2.706850</td>
-      <td>0.628133</td>
-      <td>0.907969</td>
-      <td>0.503826</td>
-    </tr>
-    <tr>
-      <th>B</th>
-      <td>0.651118</td>
-      <td>-0.319318</td>
-      <td>-0.848077</td>
-      <td>0.605965</td>
-    </tr>
-    <tr>
-      <th>C</th>
-      <td>-2.018168</td>
-      <td>0.740122</td>
-      <td>0.528813</td>
-      <td>-0.589001</td>
-    </tr>
-    <tr>
-      <th>D</th>
-      <td>0.188695</td>
-      <td>-0.758872</td>
-      <td>-0.933237</td>
-      <td>0.955057</td>
-    </tr>
-    <tr>
-      <th>E</th>
-      <td>0.190794</td>
-      <td>1.978757</td>
-      <td>2.605967</td>
-      <td>0.683509</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>pokedex_number
+1      False
+2      False
+3       True
+4      False
+5      False
+       ...  
+797     True
+798     True
+799     True
+800     True
+801     True
+Name: attack, Length: 801, dtype: bool</pre>
 </div>
 
 </div>
@@ -17550,7 +16930,7 @@ Name: W, dtype: bool</pre>
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17558,7 +16938,10 @@ Name: W, dtype: bool</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;W&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Y&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)]</span>    <span class="c1"># Egy kis haladó szűrés a végére</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">filt</span> <span class="o">=</span> <span class="n">df_poke</span><span class="p">[</span><span class="s1">&#39;attack&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">80</span>
+<span class="n">df_poke</span><span class="p">[</span><span class="n">filt</span><span class="p">]</span>
+<span class="c1"># same as:</span>
+<span class="c1"># df_poke.loc[filt] </span>
 </pre></div>
 
      </div>
@@ -17599,19 +16982,457 @@ Name: W, dtype: bool</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>W</th>
-      <th>X</th>
-      <th>Y</th>
-      <th>Z</th>
+      <th>attack</th>
+      <th>capture_rate</th>
+      <th>classfication</th>
+      <th>defense</th>
+      <th>hp</th>
+      <th>name</th>
+      <th>speed</th>
+      <th>type1</th>
+      <th>generation</th>
+      <th>is_legendary</th>
+    </tr>
+    <tr>
+      <th>pokedex_number</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>E</th>
-      <td>0.190794</td>
-      <td>1.978757</td>
-      <td>2.605967</td>
-      <td>0.683509</td>
+      <th>3</th>
+      <td>100</td>
+      <td>45</td>
+      <td>Seed Pokémon</td>
+      <td>123</td>
+      <td>80</td>
+      <td>Venusaur</td>
+      <td>80</td>
+      <td>grass</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>104</td>
+      <td>45</td>
+      <td>Flame Pokémon</td>
+      <td>78</td>
+      <td>78</td>
+      <td>Charizard</td>
+      <td>100</td>
+      <td>fire</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>103</td>
+      <td>45</td>
+      <td>Shellfish Pokémon</td>
+      <td>120</td>
+      <td>79</td>
+      <td>Blastoise</td>
+      <td>78</td>
+      <td>water</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>150</td>
+      <td>45</td>
+      <td>Poison Bee Pokémon</td>
+      <td>40</td>
+      <td>65</td>
+      <td>Beedrill</td>
+      <td>145</td>
+      <td>bug</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>90</td>
+      <td>90</td>
+      <td>Beak Pokémon</td>
+      <td>65</td>
+      <td>65</td>
+      <td>Fearow</td>
+      <td>100</td>
+      <td>normal</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>797</th>
+      <td>101</td>
+      <td>25</td>
+      <td>Launch Pokémon</td>
+      <td>103</td>
+      <td>97</td>
+      <td>Celesteela</td>
+      <td>61</td>
+      <td>steel</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>798</th>
+      <td>181</td>
+      <td>255</td>
+      <td>Drawn Sword Pokémon</td>
+      <td>131</td>
+      <td>59</td>
+      <td>Kartana</td>
+      <td>109</td>
+      <td>grass</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>799</th>
+      <td>101</td>
+      <td>15</td>
+      <td>Junkivore Pokémon</td>
+      <td>53</td>
+      <td>223</td>
+      <td>Guzzlord</td>
+      <td>43</td>
+      <td>dark</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>800</th>
+      <td>107</td>
+      <td>3</td>
+      <td>Prism Pokémon</td>
+      <td>101</td>
+      <td>97</td>
+      <td>Necrozma</td>
+      <td>79</td>
+      <td>psychic</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>801</th>
+      <td>95</td>
+      <td>3</td>
+      <td>Artificial Pokémon</td>
+      <td>115</td>
+      <td>80</td>
+      <td>Magearna</td>
+      <td>65</td>
+      <td>steel</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>332 rows × 10 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Keressünk magunknak egy erős, könnyen megszerezhető Pokemont:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_poke</span><span class="p">[(</span><span class="n">df_poke</span><span class="p">[</span><span class="s1">&#39;capture_rate&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">)</span> <span class="o">&amp;</span> 
+        <span class="p">(</span><span class="n">df_poke</span><span class="p">[</span><span class="s1">&#39;attack&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">110</span><span class="p">)</span> <span class="o">&amp;</span> 
+        <span class="p">(</span><span class="n">df_poke</span><span class="p">[</span><span class="s1">&#39;defense&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">120</span><span class="p">)]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;hp&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>   <span class="c1"># Egy kis haladó szűrés a végére</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>attack</th>
+      <th>capture_rate</th>
+      <th>classfication</th>
+      <th>defense</th>
+      <th>hp</th>
+      <th>name</th>
+      <th>speed</th>
+      <th>type1</th>
+      <th>generation</th>
+      <th>is_legendary</th>
+    </tr>
+    <tr>
+      <th>pokedex_number</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>464</th>
+      <td>140</td>
+      <td>30</td>
+      <td>Drill Pokémon</td>
+      <td>130</td>
+      <td>115</td>
+      <td>Rhyperior</td>
+      <td>40</td>
+      <td>ground</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>794</th>
+      <td>139</td>
+      <td>25</td>
+      <td>Swollen Pokémon</td>
+      <td>139</td>
+      <td>107</td>
+      <td>Buzzwole</td>
+      <td>79</td>
+      <td>bug</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>248</th>
+      <td>164</td>
+      <td>45</td>
+      <td>Armor Pokémon</td>
+      <td>150</td>
+      <td>100</td>
+      <td>Tyranitar</td>
+      <td>71</td>
+      <td>rock</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>383</th>
+      <td>180</td>
+      <td>3</td>
+      <td>Continent Pokémon</td>
+      <td>160</td>
+      <td>100</td>
+      <td>Groudon</td>
+      <td>90</td>
+      <td>ground</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>373</th>
+      <td>145</td>
+      <td>45</td>
+      <td>Dragon Pokémon</td>
+      <td>130</td>
+      <td>95</td>
+      <td>Salamence</td>
+      <td>120</td>
+      <td>dragon</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>713</th>
+      <td>117</td>
+      <td>55</td>
+      <td>Iceberg Pokémon</td>
+      <td>184</td>
+      <td>95</td>
+      <td>Avalugg</td>
+      <td>28</td>
+      <td>ice</td>
+      <td>6</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>526</th>
+      <td>135</td>
+      <td>45</td>
+      <td>Compressed Pokémon</td>
+      <td>130</td>
+      <td>85</td>
+      <td>Gigalith</td>
+      <td>25</td>
+      <td>rock</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>120</td>
+      <td>45</td>
+      <td>Megaton Pokémon</td>
+      <td>130</td>
+      <td>80</td>
+      <td>Golem</td>
+      <td>45</td>
+      <td>rock</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>376</th>
+      <td>145</td>
+      <td>3</td>
+      <td>Iron Leg Pokémon</td>
+      <td>150</td>
+      <td>80</td>
+      <td>Metagross</td>
+      <td>110</td>
+      <td>steel</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>208</th>
+      <td>125</td>
+      <td>25</td>
+      <td>Iron Snake Pokémon</td>
+      <td>230</td>
+      <td>75</td>
+      <td>Steelix</td>
+      <td>30</td>
+      <td>steel</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>768</th>
+      <td>125</td>
+      <td>45</td>
+      <td>Hard Scale Pokémon</td>
+      <td>140</td>
+      <td>75</td>
+      <td>Golisopod</td>
+      <td>40</td>
+      <td>bug</td>
+      <td>7</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>212</th>
+      <td>150</td>
+      <td>25</td>
+      <td>Pincer Pokémon</td>
+      <td>140</td>
+      <td>70</td>
+      <td>Scizor</td>
+      <td>75</td>
+      <td>bug</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>306</th>
+      <td>140</td>
+      <td>45</td>
+      <td>Iron Armor Pokémon</td>
+      <td>230</td>
+      <td>70</td>
+      <td>Aggron</td>
+      <td>50</td>
+      <td>steel</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>746</th>
+      <td>140</td>
+      <td>60</td>
+      <td>Small Fry Pokémon</td>
+      <td>130</td>
+      <td>45</td>
+      <td>Wishiwashi</td>
+      <td>30</td>
+      <td>water</td>
+      <td>7</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
@@ -17624,23 +17445,23 @@ Name: W, dtype: bool</pre>
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Pandas tutorial:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=vmEHCJofslg">https://www.youtube.com/watch?v=vmEHCJofslg</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS">https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS</a></li>
+</ul>
 
-     </div>
 </div>
 </div>
 </div>
-
-</div></section></section>
+</div></div></section></section>
 </div>
 </div>
 </body>
